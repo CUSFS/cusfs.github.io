@@ -13,34 +13,51 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   background-color: #333;
   color: white;
   padding: 20px;
+  text-align: center;
 }
 
 .logo img {
   max-width: 50px;
+  margin-bottom: 10px;
 }
 
-.navbar ul {
+.navbar {
+  width: 100%;
+  position: relative;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-menu {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
-.navbar ul li {
+.navbar-menu li {
   margin: 0 15px;
 }
 
-.navbar ul li a {
+.navbar-menu li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
+.navbar-menu li a:hover {
   color: #ff9800;
 }
 
@@ -67,11 +84,29 @@ body {
 
 @media screen and (max-width: 768px) {
   .content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .sidebar, .main-content, .events {
-      width: 100%;
-      margin: 0 0 20px 0;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu.show {
+    display: flex;
   }
 }
