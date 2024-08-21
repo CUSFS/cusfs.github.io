@@ -17,7 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #ff9800 10%, #e57300 50%, #ff9800 90%); /* Gradient for scarf texture */
+  background: url('assets/cusfs_soul.png') no-repeat center center; /* Use scarf texture */
+  background-size: cover; /* Ensure the image covers the whole area */
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -28,7 +29,7 @@ body {
 
 /* Logo Styling */
 .logo img {
-  max-width: 100px; /* Adjust size as needed */
+  max-width: 120px; /* Increase size for better visibility */
   margin-bottom: 10px;
 }
 
@@ -40,7 +41,7 @@ body {
   left: 0;
   right: 0;
   height: 15px;
-  background: linear-gradient(135deg, #ff9800 10%, #e57300 50%, #ff9800 90%);
+  background: rgba(255, 255, 255, 0.4); /* Slightly opaque to blend with the texture */
   clip-path: polygon(0% 0%, 10% 100%, 20% 0%, 30% 100%, 40% 0%, 50% 100%, 60% 0%, 70% 100%, 80% 0%, 90% 100%, 100% 0%);
 }
 
@@ -98,7 +99,8 @@ body {
 .footer {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg, #ff9800 10%, #e57300 50%, #ff9800 90%); /* Gradient for scarf texture */
+  background: url('assets/cusfs_soul.png') no-repeat center center; /* Use scarf texture */
+  background-size: cover; /* Ensure the image covers the whole area */
   color: white;
   position: relative;
   border-radius: 20px 20px 0 0; /* Rounded top edges for a scarf-like flow */
@@ -114,7 +116,7 @@ body {
   left: 0;
   right: 0;
   height: 15px;
-  background: linear-gradient(135deg, #ff9800 10%, #e57300 50%, #ff9800 90%);
+  background: rgba(255, 255, 255, 0.4); /* Slightly opaque to blend with the texture */
   clip-path: polygon(0% 0%, 10% 100%, 20% 0%, 30% 100%, 40% 0%, 50% 100%, 60% 0%, 70% 100%, 80% 0%, 90% 100%, 100% 0%);
 }
 
