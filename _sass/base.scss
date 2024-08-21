@@ -17,8 +17,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('assets/cusfs_soul.png') no-repeat center center; /* Use scarf texture */
+  background: url('/assets/cusfs_soul.png') no-repeat center center; /* Corrected image path */
   background-size: cover; /* Ensure the image covers the whole area */
+  background-attachment: fixed; /* Keeps the background in place during scrolling */
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -99,8 +100,9 @@ body {
 .footer {
   text-align: center;
   padding: 20px;
-  background: url('assets/cusfs_soul.png') no-repeat center center; /* Use scarf texture */
+  background: url('/assets/cusfs_soul.png') no-repeat center center; /* Corrected image path */
   background-size: cover; /* Ensure the image covers the whole area */
+  background-attachment: fixed; /* Keeps the background in place during scrolling */
   color: white;
   position: relative;
   border-radius: 20px 20px 0 0; /* Rounded top edges for a scarf-like flow */
